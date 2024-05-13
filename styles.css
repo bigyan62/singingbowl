@@ -137,7 +137,7 @@ a.primary-btn{
     z-index: -1;
     backdrop-filter: blur(4px);
 }
-.main-banner-section .container{
+.small-container.container{
     max-width: 1100px;
 }
 .banner-item{
@@ -569,3 +569,123 @@ ul.footer-list li:not(:last-child){
 
 
 /*END Shop CSS*/
+
+
+/*About CSS*/
+
+.text-wrapper h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.text-wrapper p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.img-holder.square{
+    aspect-ratio: 1;
+    width: 100%;
+}
+.img-holder.square img{
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: 100%;
+}
+
+/*End About CSS*/
+
+
+/*Contact CSS*/
+
+.contact-detail{
+    padding: 50px;
+    background-color: var(--gray-bg);
+    position: relative;
+    overflow: clip;
+    z-index: 0;
+    height: 100%;
+}
+
+.contact-detail .background-image{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    z-index: -1;
+    right: -55px;
+    bottom: -15px;
+}
+.contact-detail::before{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    right: -55px;
+    bottom: -14px;
+    width: 340px;
+    height: 340px;
+    background-color: #97572A33;
+    clip-path: ellipse(50% 43% at 50% 50%);
+    transform: translate(5%,15%);
+}
+.get-in-touch{
+    margin-bottom: 30px;
+}
+.get-in-touch h2{
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+.get-in-touch p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact-info{
+    margin-bottom: 20px;
+}
+.contact-info > .d-flex{
+    gap: 15px;
+}
+.contact-info .icon{
+    background-color: #000000;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+.contact-info p{
+    margin-bottom: 0;
+    line-height: 1;
+}
+.contact-form .row{
+    --bs-gutter-x: 33px;
+    --bs-gutter-y: 33px;
+}
+.input-field :is(input,textarea){
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 0;
+    outline: 0;
+}
+.input-field textarea{
+    height: 150px;
+}
+
+.submit-field input{
+    width: 100%;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    padding: 15px 35px;
+    line-height: 1;
+    font-family: var(--secondary-fonts);
+    text-transform: uppercase;
+    border: 0;
+    font-weight: 600;
+}
+
+/*End Contact CSS*/

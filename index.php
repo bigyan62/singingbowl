@@ -9,7 +9,7 @@
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="banner-item">
-                            <div class="container">
+                            <div class="container small-container">
                                 <div class="row align-items-center">
                                     <div class="col-lg-8">
                                         <div class="banner-content">
@@ -42,7 +42,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-item">
-                            <div class="container">
+                            <div class="container small-container">
                                 <div class="row align-items-center">
                                     <div class="col-lg-8">
                                         <div class="banner-content">
@@ -75,7 +75,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-item">
-                            <div class="container">
+                            <div class="container small-container">
                                 <div class="row align-items-center">
                                     <div class="col-lg-8">
                                         <div class="banner-content">
@@ -108,7 +108,7 @@
                     </li>
                     <li class="splide__slide">
                         <div class="banner-item">
-                            <div class="container">
+                            <div class="container small-container">
                                 <div class="row align-items-center">
                                     <div class="col-lg-8">
                                         <div class="banner-content">
