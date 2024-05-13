@@ -55,6 +55,10 @@ a {
     font-size: 16px;
     font-weight: 400;
 }
+.row.custom-gap-30{
+    --bs-gutter-x: 33px;
+    --bs-gutter-y: 33px;
+}
 /*Default btn CSS*/
 
 a.primary-btn{
@@ -476,3 +480,92 @@ ul.footer-list li:not(:last-child){
     font-size: 16px;
 }
 /*End Footer CSS*/
+
+/*Shop CSS*/
+/*Inner Banner CSS*/
+.innerbanner-section{
+    padding: 60px 0 0;
+    text-align: center;
+}
+.main-title h1.title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+/*End inner Banner CSs*/
+
+/*product-listing-section CSS*/
+
+.breadcrumbs :is(a,span){
+    color: var(--text-color);
+    font-size: 20px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.filter select{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.filter span{
+    font-weight: 500;
+}
+.filter-view{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.filter-view .view{
+    cursor: pointer;
+}
+.filter-view .view:not(.active) svg > *{
+    fill: #D9D9D9;
+    transition: all .2s linear;
+}
+
+*[data-view="list"] .product-item{
+    display: flex;
+    gap: 33px;
+}
+*[data-view="list"] .product-item > *{
+    flex:  0 0 calc(50% - (33px / 2));
+}
+*[data-view="list"] .product-item > .content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+*[data-view="list"] .product-category{
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+}
+*[data-view="list"] .product-item .content h3{
+    padding: 0;
+    font-size: 20px;
+}
+*[data-view="list"] .d-flex{
+    max-height: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+*[data-view="list"] .price{
+    margin-top: 20px;
+    font-size: 24px;
+}
+/*END product-listing-section CSS*/
+
+
+
+/*END Shop CSS*/

@@ -2,8 +2,6 @@
 <?php include("header.php"); ?>
 <!------------------------------ End  header section  ------------------------------>
 
-header
-
 <section class="main-banner-section" style="background-image: url('images/banner.jpeg');">
     <div class="banner-slider">
         <div class="splide">
