@@ -97,3 +97,36 @@
             </div>
         </div>
     </header>
+    <div class="cart-checkout-box">
+        <div class="added-product-list">
+            <div class="ccb-product-list">
+                <div class="ccb-product-item">
+                    <div class="ccb-img-holder">
+                        <img src="images/bowl.png" alt="">
+                    </div>
+                    <div class="ccb-content">
+                        <div class="ccb-product-title">
+                            <h3>Masterpiece Tibetan Colorful Singing Bowl</h3>
+                        </div>
+                        <div class="ccb-price">
+                            <span class="no-of-product">1</span>
+                            *
+                            <span class="per-piece-price">$29.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ccb-total">
+            <div class="sub-total">
+                <span>Sub Total:</span>
+                <span>$29.00</span>
+            </div>
+            <div class="default-btn">
+                <a href="#" class="primary-btn ccb-checkout-btn">Checkout</a>
+            </div>
+            <div class="default-btn">
+                <a href="#" class="primary-btn ccb-atc-btn">Add to cart</a>
+            </div>
+        </div>
+    </div>

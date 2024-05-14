@@ -51,10 +51,19 @@ if($('.blog-slider').length > 0){
 $(document).ready(function () {
 
     $(window).on('resize', function() {
-        var margin = - ($('.home-category-section .container').width() - $(window).width()) / 2;
-        $('.home-category-section').css('--container-offset', margin + 'px');
+        var home_category_margin = - ($('.home-category-section .container').width() - $(window).width()) / 2;
+        $('.home-category-section').css('--container-offset', home_category_margin + 'px');
+        var header_margin = - ($('.site-header .container').width() - $(window).width()) / 2;
+        $('.cart-checkout-box').css('--container-offset', header_margin + 'px');
     }).trigger('resize');
 
+});
+
+$(document).ready(function () {
+    $('.site-header .wishlist').click(function(){
+        $(this).toggleClass('cart-active');
+        $('.cart-checkout-box').toggleClass('cart-active');
+    });
 });
 
 /*Change Product listing View*/

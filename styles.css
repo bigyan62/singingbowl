@@ -738,7 +738,8 @@ ul.footer-list li:not(:last-child){
     font-size: 14px;
     line-height: 1;
     align-self: flex-end;
-    margin-top: 4px;
+    position: relative;
+    top: 1px;
 }
 .dt-holder{
     margin-bottom: 20px;
@@ -750,6 +751,12 @@ a.readmore-btn{
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
+}
+a.readmore-btn svg{
+    transition: all 0.3s linear;
+}
+a.readmore-btn:hover svg{
+    margin-left: 5px;
 }
 /*End blog CSS*/
 
@@ -939,3 +946,84 @@ a.readmore-btn{
     font-weight: 300;
 }
 /*End product Page CSS*/
+
+
+/*cart-checkout-box CSS*/
+
+.cart-checkout-box{
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 111;
+    top: 80px;
+    right: var(--container-offset);
+    max-width: 350px;
+    box-shadow: 0 4px 15px 0 #00000026;
+    display: none;
+    max-height: 500px;
+    overflow: auto;
+}
+.cart-checkout-box.cart-active{
+    display: block;
+}
+.ccb-product-list{
+    padding-top: 10px;
+    height: 100%;
+}
+.ccb-product-item{
+    display: flex;
+    padding: 20px 25px;
+    gap: 15px;
+}
+.ccb-img-holder{
+    flex: 0 0 auto;
+    max-width: 60px;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+.ccb-product-title h3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+.ccb-price{
+    font-size: 18px;
+    line-height: 1;
+}
+.ccb-total{
+    padding: 15px 25px 25px;
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #d9d9d9;
+}
+.sub-total{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ccb-total .default-btn{
+    margin-top: 15px;
+}
+a.ccb-checkout-btn{
+    width: 100%;
+    background-color: var(--dark-color);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+a.ccb-atc-btn{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+/*End cart-checkout-box CSS*/

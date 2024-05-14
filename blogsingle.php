@@ -15,7 +15,7 @@
                                 <path d="M4 20H44M4 32H44M17 2.5V8M31 2.5V8M17 20V44M31 20V44M44 13V39M4 13V39M14 44H34" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <span>26 . 9 . 2024</span>
+                        <span>Apr 14, 2024</span>
                     </div>
                     <div class="time-tr">
                         <div class="icon">
@@ -85,7 +85,7 @@
                                                     <path d="M4 20H44M4 32H44M17 2.5V8M31 2.5V8M17 20V44M31 20V44M44 13V39M4 13V39M14 44H34" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
-                                            <span>26 . 9 . 2024</span>
+                                            <span>Apr 14, 2024</span>
                                         </div>
                                         <div class="time-tr">
                                             <div class="icon">
@@ -132,7 +132,7 @@
                                                     <path d="M4 20H44M4 32H44M17 2.5V8M31 2.5V8M17 20V44M31 20V44M44 13V39M4 13V39M14 44H34" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
-                                            <span>26 . 9 . 2024</span>
+                                            <span>Apr 14, 2024</span>
                                         </div>
                                         <div class="time-tr">
                                             <div class="icon">
@@ -179,7 +179,7 @@
                                                     <path d="M4 20H44M4 32H44M17 2.5V8M31 2.5V8M17 20V44M31 20V44M44 13V39M4 13V39M14 44H34" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
-                                            <span>26 . 9 . 2024</span>
+                                            <span>Apr 14, 2024</span>
                                         </div>
                                         <div class="time-tr">
                                             <div class="icon">
@@ -226,7 +226,7 @@
                                                     <path d="M4 20H44M4 32H44M17 2.5V8M31 2.5V8M17 20V44M31 20V44M44 13V39M4 13V39M14 44H34" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
-                                            <span>26 . 9 . 2024</span>
+                                            <span>Apr 14, 2024</span>
                                         </div>
                                         <div class="time-tr">
                                             <div class="icon">
@@ -273,7 +273,7 @@
                                                     <path d="M4 20H44M4 32H44M17 2.5V8M31 2.5V8M17 20V44M31 20V44M44 13V39M4 13V39M14 44H34" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
-                                            <span>26 . 9 . 2024</span>
+                                            <span>Apr 14, 2024</span>
                                         </div>
                                         <div class="time-tr">
                                             <div class="icon">
@@ -320,7 +320,7 @@
                                                     <path d="M4 20H44M4 32H44M17 2.5V8M31 2.5V8M17 20V44M31 20V44M44 13V39M4 13V39M14 44H34" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
-                                            <span>26 . 9 . 2024</span>
+                                            <span>Apr 14, 2024</span>
                                         </div>
                                         <div class="time-tr">
                                             <div class="icon">
