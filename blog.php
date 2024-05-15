@@ -14,7 +14,7 @@
 
 <section class="blogs-section section-gaps">
     <div class="container">
-        <div class="d-flex align-items-center justify-content-between mb-5">
+        <div class="d-flex align-items-center justify-content-between mb-5 flex-wrap row-gap-2">
             <div class="breadcrumbs">
                 <a href="#">Home</a>
                 <span>/</span>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="row custom-gap-30">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -176,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -223,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -270,7 +270,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -317,7 +317,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -364,7 +364,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -411,7 +411,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -458,7 +458,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">
@@ -505,7 +505,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="blog-item">
                     <div class="img-holder">
                         <a href="#">

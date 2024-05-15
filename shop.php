@@ -16,7 +16,7 @@
 <section class="product-listing-section section-gaps">
     <div class="container">
         <div class="product-filter">
-            <div class="d-flex align-items-center justify-content-between mb-5">
+            <div class="d-flex align-items-center justify-content-between mb-5 flex-wrap row-gap-2">
                 <div class="breadcrumbs">
                             <a href="#">Home</a>
                             <span>/</span>
@@ -34,7 +34,7 @@
                             <option value="Color">Color</option>
                         </select>
                     </div>
-                    <div class="filter-view">
+                    <div class="filter-view d-sm-flex d-none">
                         <span>View</span>
                         <div class="view grid-view active">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -57,7 +57,7 @@
         </div>
         <div class="product-list">
             <div class="row custom-gap-30">
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">
@@ -197,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3" data-name="product" data-view="grid">
+                <div class="col-lg-3 col-md-6" data-name="product" data-view="grid">
                     <div class="product-item">
                         <div class="img-holder"><a href="#"><img src="images/product.png" alt=""></a></div>
                         <div class="content">

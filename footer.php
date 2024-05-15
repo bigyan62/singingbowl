@@ -1,8 +1,8 @@
 <footer class="site-footer">
     <div class="top-footer">
         <div class="container">
-            <div class="row big-column-gap">
-                <div class="col-lg-4">
+            <div class="row big-column-gap gy-5">
+                <div class="col-lg-4 ">
                     <div class="footer-item">
                         <div class="site-logo">
                             <a href="#">
@@ -62,8 +62,8 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-4">
+                    <div class="row gy-5">
+                        <div class="col-md-4">
                             <div class="footer-item px-40">
                                 <div class="footer-title">
                                     <h4>Categories</h4>
@@ -87,7 +87,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                             <div class="footer-item px-40">
                                 <div class="footer-title">
                                     <h4>Categories</h4>
@@ -111,7 +111,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                             <div class="footer-item px-40">
                                 <div class="footer-title">
                                     <h4>Categories</h4>

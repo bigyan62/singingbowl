@@ -152,8 +152,8 @@
                 <h2 class="title">Benefits of singing bowls</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-3">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
                 <div class="benefit-item">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -170,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="benefit-item">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -187,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="benefit-item">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="benefit-item">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">

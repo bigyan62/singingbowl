@@ -1,0 +1,322 @@
+@media screen and (min-width: 1300px) {
+    .small-container.container {
+        max-width: 1100px;
+    }
+
+    .site-footer .container {
+        max-width: 1200px;
+    }
+
+    .benefits-section .container {
+        max-width: 1100px;
+    }
+
+    .big-column-gap {
+        --bs-gutter-x: 56px;
+        --bs-gutter-y: 60px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .search-wraper .search-field {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .dropdown-btn{
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bot-footer .container::before {
+        width: 100%;
+        left: 0;
+    }
+
+    /*Main-title CSS*/
+
+    .main-title h3.title {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+    /**/
+
+    /*Banner section*/
+
+    .banner-item .row {
+        flex-direction: column-reverse;
+        gap: 33px;
+    }
+
+    .home-category-section .img-holder img {
+        height: 50vh;
+    }
+
+    .category-content .text-box p {
+        line-height: 1.4;
+    }
+
+    .footer-item.px-40 {
+        padding: 0;
+    }
+
+    .img-holder.square img {
+        aspect-ratio: 2 / 1;
+    }
+
+    .main-product-img {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .product-swiper {
+        flex-direction: row;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .product-swiper .img-holder {
+        flex: 0 0 25%;
+    }
+
+    .product-details .breadcrumbs {
+        margin-bottom: 20px;
+    }
+
+    .product-title {
+        max-width: 100%;
+    }
+
+    .cart-checkout-box.cart-active {
+        top: 144px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 770px;
+    }
+    body.hamburger-active{
+        overflow: hidden;
+    }
+    .hamburger-menu {
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: end;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .line {
+        width: 30px;
+        height: 2px;
+        background-color: #202020;
+        position: relative;
+        margin-bottom: 5px;
+
+        transition: background 0s 0.3s ease;
+    }
+
+    .line:after,
+    .line:before {
+        content: '';
+        background-color: #202020;
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        display: block;
+    }
+
+    .line::before {
+        bottom: 8px;
+        transform-origin: 100% 100%;
+        transition: bottom 0.3s 0.3s ease, transform 0.3s ease;
+    }
+
+    .line::after {
+        transform-origin: 0% 0%;
+        bottom: 16px;
+        transition: bottom 0.3s 0.3s ease, transform 0.3s ease;
+    }
+
+    .active .line {
+        background-color: transparent;
+        transition: background 0s 0.3s ease;
+    }
+
+    .active .line:before {
+        bottom: 0px;
+        transform: rotate(45deg) translateX(-20%);
+        transition: bottom 0.3s ease, transform 0.3s 0.3s ease;
+    }
+
+    .active .line:after {
+        bottom: 0px;
+        transform: rotate(-45deg) translateX(20%);
+        transition: bottom 0.3s ease, transform 0.3s 0.3s ease;
+    }
+
+    /*Nav List*/
+    body:before{
+        content: '';
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #00000080;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        visibility: hidden;
+    }
+    body.hamburger-active:before{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-menu{
+        position: relative;
+        z-index: 1;
+    }
+    
+    .nav-list{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 0;
+        background-color: #ffffff;
+        max-width: 400px;
+        width: 100%;
+        bottom: 0;
+        padding: 80px 0;
+        transition: all 0.3s ease;
+    }
+    .nav-active .nav-list{
+        right: 0;
+    }
+    ul.primary-menu{
+        display: block !important;
+    }
+    .primary-menu li{
+        padding: 0;
+    }
+    .primary-menu > li{
+        border-top: 1px solid #d9d9d9;
+    }
+    .primary-menu > li:last-child{
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .sub-menu a:hover{
+        background: transparent;
+    }
+    ul.primary-menu a{
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 20px;
+        transition: all 0.3s linear;
+    }
+    ul.sub-menu{
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        position: all;
+    }
+    li.menu-item-has-children.open > a{
+        background-color: #d9d9d9;
+    }
+    .sub-menu a span{
+        transform: none;
+    }
+    .primary-menu li.open > a span{
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner-title h2{
+        font-size: 26px;
+    }
+    .banner-item .text-box p{
+        font-size: 16px;
+    }
+    .banner-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .banner-content > *{
+        flex: 1 0 100%;
+        width: 100%;
+    }
+    .banner-content :is(.banner-price,.default-btn){
+        flex: 0 0 auto;
+        width: auto;
+    }
+    .banner-price{
+        font-size: 20px;
+    }
+    .banner-price p{
+        margin: 0;
+    }
+    .banner-price span{
+        font-size: 45px;
+    }
+    .banner-content .default-btn{
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+
+    .home-category-section .img-holder{
+        margin-right: calc(-1 * var(--container-offset));
+    }
+    .home-category-section.right-side .img-holder{
+        margin-left: calc(-1 * var(--container-offset));
+    }
+    .category-content{
+        padding: 30px 0 50px;
+    }
+    .home-category-section.right-side .category-content{
+        text-align: left;
+        margin: auto;
+    }
+    .section-gaps{
+        padding: 30px 0;
+    }
+    .benefits-section{
+        padding: 60px 0;
+    }
+    .innerbanner-section{
+        padding: 30px 0 0;
+    }
+    .main-title h1.title{
+        font-size: 30px ;
+    }
+
+    .single-head h2{
+        font-size: 24px;
+    }
+    .description .accordion-item{
+        margin-bottom: 15px;
+    }
+    .description .accordion-item .accordion-button{
+        font-size: 20px;
+        padding-top: 15px;
+    }
+    .contact-detail{
+        padding: 25px;
+    }
+    .get-in-touch h2{
+        font-size: 26px;
+    }
+}

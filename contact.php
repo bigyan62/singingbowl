@@ -15,7 +15,7 @@
 
 <section class="contact-section section-gaps">
     <div class="container">
-        <div class="row big-column-gap">
+        <div class="row big-column-gap gy-5">
             <div class="col-lg-6">
                 <div class="contact-detail">
                     <div class="background-image" style="background-image: url('images/contact.png');"></div>
@@ -69,32 +69,32 @@
             <div class="col-lg-6">
                 <div class="contact-form">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="input-field">
                                 <input type="text" name="Fname" placeholder="First Name*">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="input-field">
                                 <input type="text" name="Lname" placeholder="Last Name*">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="input-field">
                                 <input type="email" name="email" placeholder="Email*">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="input-field">
                                 <input type="number" name="number" placeholder="Phone">
                             </div>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <div class="input-field">
                                 <textarea placeholder="Message"></textarea>
                             </div>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <div class="submit-field">
                                 <input type="submit" value="Send Message">
                             </div>

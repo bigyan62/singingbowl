@@ -20,8 +20,8 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
+            <div class="row align-items-center gy-4">
+                <div class="col-md-3 col">
                     <div class="site-logo">
                         <a href="#">
                             <div class="icon">
@@ -52,15 +52,34 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col">
                     <div class="nav-menu">
                         <div class="nav-list">
-                            <ul class="nav primary-menu justify-content-center">
+                            <ul class="nav primary-menu justify-content-lg-center justify-content-md-end">
                                 <li>
                                     <a href="#">New Arrival</a>
                                 </li>
                                 <li>
                                     <a href="#">All Product</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="#">Singing bowl</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">New Product</a>
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="#">New</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Product</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Old Product</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">About</a>
@@ -69,6 +88,9 @@
                                     <a href="#">Contact</a>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="hamburger-menu">
+                            <div class="line"></div>
                         </div>
                     </div>
                 </div>
