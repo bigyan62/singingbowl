@@ -90,7 +90,7 @@
         max-width: 100%;
     }
 
-    .cart-checkout-box.cart-active {
+    .cart-checkout-box {
         top: 144px;
     }
 }
@@ -242,6 +242,22 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .home-category-section .img-holder{
+        margin-right: calc(-1 * var(--container-offset));
+    }
+    .home-category-section.right-side .img-holder{
+        margin-left: calc(-1 * var(--container-offset));
+    }
+    .category-content{
+        padding: 30px 0 50px;
+    }
+    .home-category-section.right-side .category-content{
+        text-align: left;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .banner-title h2{
         font-size: 26px;
@@ -277,19 +293,6 @@
         margin-bottom: 6px;
     }
 
-    .home-category-section .img-holder{
-        margin-right: calc(-1 * var(--container-offset));
-    }
-    .home-category-section.right-side .img-holder{
-        margin-left: calc(-1 * var(--container-offset));
-    }
-    .category-content{
-        padding: 30px 0 50px;
-    }
-    .home-category-section.right-side .category-content{
-        text-align: left;
-        margin: auto;
-    }
     .section-gaps{
         padding: 30px 0;
     }
@@ -318,5 +321,18 @@
     }
     .get-in-touch h2{
         font-size: 26px;
+    }
+    .subscribe-form{
+        gap: 15px;
+    }
+    .subscribe-form :is(input,button){
+        font-size: 20px;
+        padding: 10px;
+    }
+    .subscribe-form .input-field {
+        max-width: 100%;
+    }
+    ul.footer-list li:not(:last-child){
+        margin-bottom: 10px;
     }
 }

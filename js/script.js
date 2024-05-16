@@ -1,3 +1,58 @@
+if ($('.banner-slider').length > 0) {
+    var splide = new Splide('.banner-slider .splide', {
+        arrows: false,
+        pagination: true,
+        autoplay: true,
+        perPage: 1,
+        type: 'loop',
+    });
+    splide.mount();
+}
+
+if ($('.product-slider').length > 0) {
+    var productSplide = new Splide('.product-slider .splide', {
+        arrows: true,
+        pagination: false,
+        perPage: 4,
+        perMove: 1,
+        gap: '33px',
+        breakpoints: {
+            1200: {
+                perPage: 3,
+            },
+            991: {
+                perPage: 2,
+            },
+            575: {
+                perPage: 1,
+            },
+        }
+    });
+    productSplide.mount();
+}
+
+if ($('.blog-slider').length > 0) {
+    var blogSplide = new Splide('.blog-slider .splide', {
+        arrows: true,
+        pagination: false,
+        perPage: 4,
+        perMove: 1,
+        gap: '33px',
+        breakpoints: {
+            1200: {
+                perPage: 3,
+            },
+            991: {
+                perPage: 2,
+            },
+            575: {
+                perPage: 1,
+            },
+        }
+    });
+    blogSplide.mount();
+}
+
 jQuery(function ($) {
 
     $(document).ready(function () {
@@ -20,56 +75,7 @@ jQuery(function ($) {
 });
 
 
-if ($('.banner-slider').length > 0) {
-    var splide = new Splide('.banner-slider .splide', {
-        arrows: false,
-        pagination: true,
-        autoplay: true,
-        perPage: 1,
-        type: 'loop',
-    });
-    splide.mount();
-}
 
-if ($('.product-slider').length > 0) {
-    var productSplide = new Splide('.product-slider .splide', {
-        arrows: true,
-        pagination: false,
-        perPage: 4,
-        perMove: 1,
-        type: 'loop',
-        gap: '33px',
-        breakpoints: {
-            991: {
-                perPage: 2,
-            },
-            575: {
-                perPage: 1,
-            },
-        }
-    });
-    productSplide.mount();
-}
-
-if ($('.blog-slider').length > 0) {
-    var blogSplide = new Splide('.blog-slider .splide', {
-        arrows: true,
-        pagination: false,
-        perPage: 4,
-        perMove: 1,
-        type: 'loop',
-        gap: '33px',
-        breakpoints: {
-            991: {
-                perPage: 2,
-            },
-            575: {
-                perPage: 1,
-            },
-        }
-    });
-    blogSplide.mount();
-}
 
 $(document).ready(function () {
 
@@ -164,6 +170,7 @@ $(document).ready(function () {
         if ($(window).width() > 767) {
             var window_width = $(window).width();
             $('.sub-menu').each(function (index, element) {
+                
                 var this_left = $(element).parent().offset().left + $(element).parent().width();
                 var this_width = $(element).width();
                 var right_position = this_left + this_width;
@@ -177,10 +184,11 @@ $(document).ready(function () {
                     $(element).parent().removeClass('sub-menu-left');
                     $(element).parent().removeClass('sub-menu-right');
                 }
+                if($(element).parent().parent().hasClass('primary-menu')){
+                    $(element).addClass('first-sub-menu');
+                }
             });
         }
     }).trigger('resize');
 
 });
-
-

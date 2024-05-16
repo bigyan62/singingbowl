@@ -258,7 +258,7 @@
         <div class="row align-items-center g-0">
             <div class="col-md-6">
                 <div class="img-holder">
-                    <img src="images/category-img.jpeg" alt="">
+                    <img src="images/blog7.png" alt="">
                 </div>
             </div>
             <div class="col-md-6">
@@ -286,7 +286,7 @@
         <div class="row align-items-center g-0">
             <div class="col-md-6">
                 <div class="img-holder">
-                    <img src="images/category-img.jpeg" alt="">
+                    <img src="images/blog8.png" alt="">
                 </div>
             </div>
             <div class="col-md-6">
