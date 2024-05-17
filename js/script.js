@@ -15,7 +15,7 @@ if ($('.product-slider').length > 0) {
         pagination: false,
         perPage: 4,
         perMove: 3,
-        gaperMove: 3,p: '33px',
+        gap: '33px',
         breakpoints: {
             1200: {
                 perPage: 3,
