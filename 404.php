@@ -10,7 +10,7 @@
             </div>
             <div class="error-content">
                 <h2>This is somewhat embarrassing, isn’t it?</h2>
-                <p>It looks like nothing was found at this location. Maybe try a search?</p>
+                <p>It looks like nothing was found at this location. Maybe go home?</p>
                 <div class="default-btn">
                     <a href="#" class="primary-btn">
                         Go Home

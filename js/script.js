@@ -14,17 +14,20 @@ if ($('.product-slider').length > 0) {
         arrows: true,
         pagination: false,
         perPage: 4,
-        perMove: 1,
-        gap: '33px',
+        perMove: 3,
+        gaperMove: 3,p: '33px',
         breakpoints: {
             1200: {
                 perPage: 3,
+                perMove: 2,
             },
             991: {
                 perPage: 2,
+                perMove: 1,
             },
             575: {
                 perPage: 1,
+                pagination: true,
             },
         }
     });
@@ -36,17 +39,20 @@ if ($('.blog-slider').length > 0) {
         arrows: true,
         pagination: false,
         perPage: 4,
-        perMove: 1,
+        perMove: 3,
         gap: '33px',
         breakpoints: {
             1200: {
                 perPage: 3,
+                perMove: 2,
             },
             991: {
                 perPage: 2,
+                perMove: 1,
             },
             575: {
                 perPage: 1,
+                pagination: true,
             },
         }
     });
@@ -161,34 +167,34 @@ $(document).ready(function () {
 /*END Product listing view */
 
 
-/* Sub-menu going off screen fixing Js*/
+// /* Sub-menu going off screen fixing Js*/
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
 
-    $(window).on('resize', function () {
-        if ($(window).width() > 767) {
-            var window_width = $(window).width();
-            $('.sub-menu').each(function (index, element) {
+//     $(window).on('resize', function () {
+//         if ($(window).width() > 767) {
+//             var window_width = $(window).width();
+//             $('.sub-menu').each(function (index, element) {
                 
-                var this_left = $(element).parent().offset().left + $(element).parent().width();
-                var this_width = $(element).width();
-                var right_position = this_left + this_width;
-                if (right_position > window_width) {
-                    $(element).parent().addClass('sub-menu-left');
-                }
-                else if (this_left < 0) {
-                    $(element).parent().addClass('sub-menu-right');
-                }
-                else if (right_position < window_width) {
-                    $(element).parent().removeClass('sub-menu-left');
-                    $(element).parent().removeClass('sub-menu-right');
-                }
-                if($(element).parent().parent().hasClass('primary-menu')){
-                    $(element).addClass('first-sub-menu');
-                }
-            });
-        }
-    }).trigger('resize');
+//                 var this_left = $(element).parent().offset().left + $(element).parent().width();
+//                 var this_width = $(element).width();
+//                 var right_position = this_left + this_width;
+//                 if (right_position > window_width) {
+//                     $(element).parent().addClass('sub-menu-left');
+//                 }
+//                 else if (this_left < 0) {
+//                     $(element).parent().addClass('sub-menu-right');
+//                 }
+//                 else if (right_position < window_width) {
+//                     $(element).parent().removeClass('sub-menu-left');
+//                     $(element).parent().removeClass('sub-menu-right');
+//                 }
+//                 if($(element).parent().parent().hasClass('primary-menu')){
+//                     $(element).addClass('first-sub-menu');
+//                 }
+//             });
+//         }
+//     }).trigger('resize');
 
-});
+// });

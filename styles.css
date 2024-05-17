@@ -59,8 +59,8 @@ a {
 }
 
 .row.custom-gap-30 {
-    --bs-gutter-x: 33px;
-    --bs-gutter-y: 33px;
+        --bs-gutter-x: 33px;
+        --bs-gutter-y: 33px;
 }
 
 /*Default btn CSS*/
@@ -184,10 +184,12 @@ li.menu-item-has-children:hover>.sub-menu {
 
 .sub-menu .sub-menu {
     left: 100%;
-    top: 0 !important;
+    top: 10px;
     z-index: 0;
 }
-
+.sub-menu li.menu-item-has-children:hover > .sub-menu{
+    top: 0;
+}
 .sub-menu li:first-child a {
     border-radius: 5px 5px 0 0;
 }
@@ -224,7 +226,7 @@ ul.sub-menu.first-sub-menu {
 
 .search-wraper .search-field input {
     width: 100%;
-    padding: 12px 30px 12px 30px;
+    padding: 12px 30px 12px 15px;
     line-height: 1;
     font-size: 16px;
     border: 1px solid #DBDCE0;
@@ -232,7 +234,7 @@ ul.sub-menu.first-sub-menu {
     outline: 0;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.5811 13.2949C15.7013 11.8945 16.3711 10.1183 16.3711 8.18554C16.3711 3.66479 12.7063 0 8.18554 0C3.66479 0 0 3.66479 0 8.18554C0 12.7063 3.66479 16.3711 8.18554 16.3711C10.1183 16.3711 11.8945 15.7013 13.2949 14.5811L18.4473 19.7336C18.8025 20.0888 19.3784 20.0888 19.7336 19.7336C20.0888 19.3784 20.0888 18.8025 19.7336 18.4473L14.5811 13.2949ZM8.18554 14.5612C4.66436 14.5612 1.80988 11.7067 1.80988 8.18554C1.80988 4.66436 4.66436 1.80988 8.18554 1.80988C11.7067 1.80988 14.5612 4.66436 14.5612 8.18554C14.5612 11.7067 11.7067 14.5612 8.18554 14.5612Z' fill='%23202020'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: calc(100% - 20px) center;
+    background-position: calc(100% - 10px) center;
 }
 
 .search-wraper .search-field input::placeholder {
@@ -304,11 +306,11 @@ ul.sub-menu.first-sub-menu {
     margin-top: 40px;
 }
 
-.banner-slider .splide__pagination {
+.splide__pagination {
     bottom: 25px;
 }
 
-.banner-slider .splide__pagination button {
+.splide__pagination button {
     opacity: 1;
     background-color: #d9d9d9;
     width: 10px;
@@ -319,7 +321,7 @@ ul.sub-menu.first-sub-menu {
     outline: 0;
 }
 
-.banner-slider .splide__pagination .splide__pagination__page.is-active {
+.splide__pagination .splide__pagination__page.is-active {
     background-color: var(--dark-color);
     border-color: #ffffff;
     width: 12px;
@@ -595,8 +597,26 @@ ul.footer-list a {
     color: #fff;
     font-weight: 500;
     font-size: 16px;
+    position: relative;
+    display: inline-block;
 }
-
+ul.footer-list a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: var(--primary-color);
+    width: 0px;
+    transition: all 0.2s ease;
+}
+ul.footer-list a:hover:before{
+    width: 5px;
+}
+ul.footer-list a:hover{
+    padding-left: 10px;
+}
 ul.footer-list li:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -704,6 +724,10 @@ ul.footer-list li:not(:last-child) {
 .breadcrumbs :is(a, span) {
     color: var(--text-color);
     font-size: 20px;
+    transition: all 0.3s ease;
+}
+.breadcrumbs a:hover{
+    color: var(--primary-color);
 }
 
 .filter {
@@ -800,6 +824,10 @@ ul.footer-list li:not(:last-child) {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
+}
+.text-wrapper a{
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 .img-holder.square img {
@@ -997,7 +1025,9 @@ a.readmore-btn {
     font-weight: 500;
     text-transform: capitalize;
 }
-.blog-item img,
+.blog-item img{
+    transition: all 1s linear;
+}
 .blog-item a,
 a.readmore-btn svg {
     transition: all 0.3s ease;
@@ -1103,7 +1133,7 @@ a.readmore-btn:hover svg {
 /*End Product Gallery*/
 
 .product-details .breadcrumbs {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .product-details .breadcrumbs :is(a, span) {
@@ -1235,6 +1265,7 @@ a.readmore-btn:hover svg {
     padding: 5px 0 0;
     font-size: 16px;
     font-weight: 300;
+    line-height: 1.3;
 }
 
 /*End product Page CSS*/
@@ -1246,17 +1277,22 @@ a.readmore-btn:hover svg {
     position: absolute;
     background-color: #ffffff;
     z-index: 111;
-    top: 80px;
+    top: 100px;
     right: var(--container-offset);
     max-width: 350px;
     box-shadow: 0 4px 15px 0 #00000026;
-    display: none;
     max-height: 500px;
     overflow: auto;
+    transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;  
 }
-
-.cart-checkout-box.cart-active {
-    display: block;
+.cart-checkout-box.cart-active{
+    top: 80px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;    
 }
 
 .ccb-product-list {
@@ -1322,6 +1358,9 @@ a.ccb-checkout-btn {
     font-size: 12px;
     font-weight: 600;
 }
+a.ccb-checkout-btn:hover{
+    background-color: #444444;
+}
 
 a.ccb-atc-btn {
     width: 100%;
@@ -1333,7 +1372,11 @@ a.ccb-atc-btn {
 /*End cart-checkout-box CSS*/
 
 /*404 Page CSS*/
-
+.error-section{
+    min-height: calc(100vh - 80px);
+    display: grid;
+    place-items: center;
+}
 .error-title {
     position: relative;
     margin-bottom: 20px;
@@ -1346,7 +1389,7 @@ a.ccb-atc-btn {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 82px;
-    line-height: 82px;
+    line-height: 1;
     color: var(--primary-color);
     font-family: var(--secondary-fonts);
 }
@@ -1355,13 +1398,13 @@ a.ccb-atc-btn {
 
     content: "404";
     position: absolute;
-    top: -20px;
+    top: 50%;
     left: 50%;
     color: #F4F4F4;
     font-weight: 600;
     font-size: 400px;
-    line-height: 320px;
-    transform: translateX(-50%);
+    line-height: 1;
+    transform: translate(-50% , -50%);
     font-family: var(--secondary-fonts);
     letter-spacing: -20px;
     pointer-events: none;

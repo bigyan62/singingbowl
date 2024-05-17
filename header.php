@@ -97,7 +97,7 @@
                 <div class="col-lg-3">
                     <div class="search-wraper">
                         <div class="search-field">
-                            <input type="search" placeholder="Search">
+                            <input type="text" placeholder="Search">
                         </div>
                         <div class="wishlist">
                             <a href="#">

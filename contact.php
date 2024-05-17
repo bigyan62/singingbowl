@@ -45,8 +45,8 @@
                                         </svg>
                                 </div>
                                 <div class="details">
-                                    <strong>Address</strong>
-                                    <p>Bhaktapur, Nepal</p>
+                                    <strong>Phone Number</strong>
+                                    <a href="tel:+977 9876543210">+977 9876543210</a>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +58,8 @@
                                         </svg>
                                 </div>
                                 <div class="details">
-                                    <strong>Address</strong>
-                                    <p>Bhaktapur, Nepal</p>
+                                    <strong>Email</strong>
+                                    <a href="mailto:example@gmail.com">example@gmail.com</a>
                                 </div>
                             </div>
                         </div>
